@@ -23,7 +23,8 @@ Todo se guarda en el dispositivo (localStorage). Sin cuentas, sin servidor, sin 
    - Lo que sale con errores o con pista **se repite al final de la misma sesión**.
 3. **Comprobar** → corrección inmediata con la cadena completa → **Siguiente**.
 
-**Corrección**: no cuentan mayúsculas, tildes, espacios ni superíndices (`↑ca2+` = `↑ Ca²⁺`). Se perdona **una errata**
+**Corrección**: no cuentan mayúsculas, tildes, espacios ni superíndices (`↑ca2+` = `↑ Ca²⁺`). Las cargas se escriben
+con el teclado normal: `Ca2+`, `Ca+2`, `Ca++` o `Ca 2+` valen como `Ca²⁺` (y `SO4-2` o `SO4--` como `SO₄²⁻`). Se perdona **una errata**
 en palabras de 6 o más letras (`hiperpolarisación`), pero nunca en flechas, números, letras griegas ni en las dos primeras
 letras (`hipo/hiper`, `aferente/eferente`). Si aun así la app se equivoca, toca **Marcar como correcta**.
 
