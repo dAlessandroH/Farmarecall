@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pruebas · FarmaRecall</title>
+  <link rel="stylesheet" href="../src/styles.css">
+  <style>
+    #results { padding-left: 0; list-style: none; display: grid; gap: 8px; }
+    #results li { padding: 10px 14px; border-radius: 10px; background: var(--surface); border: 1px solid var(--border); }
+    #results .fail { border-color: var(--error); color: var(--error); }
+    #summary { font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main class="app screen">
+    <h1>Pruebas</h1>
+    <p id="summary">Ejecutando…</p>
+    <ol id="results"></ol>
+  </main>
+  <script type="module">
+    import { run } from './runner.js';
+    import './storage.test.js';
+    import './csv.test.js';
+    import './concepts.test.js';
+    import './home.test.js';
+    import './library.test.js';
+    import './exercise.test.js';
+    import './review.test.js';
+    import './study.test.js';
+    import './backup.test.js';
+    import './gamification.test.js';
+    import './pwa.test.js';
+
+    run(document.getElementById('results'), document.getElementById('summary'));
+  </script>
+</body>
+</html>

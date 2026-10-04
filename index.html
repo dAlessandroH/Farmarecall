@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>FarmaRecall</title>
+  <meta name="description" content="Active Recall de cadenas farmacológicas. Funciona sin conexión.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3f6f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1215" media="(prefers-color-scheme: dark)">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- PWA: instalable desde Safari con Compartir → Añadir a pantalla de inicio -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="FarmaRecall">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <link rel="stylesheet" href="src/styles.css">
+  <script type="module" src="src/main.js"></script>
+</head>
+<body>
+  <div id="app" class="app">
+    <p class="boot">Cargando…</p>
+  </div>
+  <noscript><p class="boot">FarmaRecall necesita JavaScript activado.</p></noscript>
+</body>
+</html>
